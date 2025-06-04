@@ -9,7 +9,7 @@ interface ClockProps {
 }
 
 export class Clock extends React.Component<ClockProps, ClockState> {
-  state: Readonly<ClockState> = {
+  state: ClockState = {
     today: new Date().toUTCString().slice(-12, -4),
   };
 
