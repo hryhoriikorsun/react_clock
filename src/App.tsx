@@ -21,7 +21,7 @@ export class App extends React.Component<State> {
 
   private timerId = 0;
 
-  handleRemoveClock = (event: MouseEvent) => {
+  handleRemoveClock = (event: Event) => {
     event.preventDefault();
 
     this.setState({ hasClock: false });
